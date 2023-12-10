@@ -16,7 +16,7 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/fetch-data-from-api', [productController::class, 'fetchDataFromApi']);
 
-Route::get('/show-products', [productController::class, 'showProducts']);
+Route::get('/show-products', [productController::class, 'showallProducts']);
 
 Route::get('/sellable-products', [ProductController::class, 'showSellableProducts']);
 

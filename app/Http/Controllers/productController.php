@@ -70,11 +70,11 @@ class productController extends Controller
         }
     }
 
-    public function showProducts()
+    public function showallProducts()
     {
         $products = Product::with(['kategori', 'status'])->get();
 
-        return view('show_product', compact('products'));
+        return view('show_all_product', compact('products'));
     }
     
     public function showSellableProducts()
